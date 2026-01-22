@@ -8,7 +8,7 @@ import pandas as pd
 serviceKey = "J3%2BczV4vMANbI6HHxJVrA5xklryjiDDR0TGMHyI02oja92z877l5HSMwRGWDZlFjWZ6nzm7Jk4C23JQEVbnD7Q%3D%3D"
 
 # [CODE 1]
-def getRequestUrl(url):  #url=출입국관광통계써비스의 오픈API를 사용하는 데이터를 요청하는 url
+def getRequestUrl(url):  #url=출입국 관광 통계 서비스의 오픈 API를 사용하는 데이터를 요청하는 url
   req = urllib.request.Request(url)  #접속 요청 객체
   try:
     response = urllib.request.urlopen(req)  #서버에서 받은 응답을 저장하는 객체
@@ -103,4 +103,5 @@ def main():
 
 
 if __name__ == '__main__':
+
   main()
